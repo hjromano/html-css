@@ -11,8 +11,9 @@
         table {
             width: 500px;
             border-collapse: collapse;
-
+            position: relative;
         }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -28,6 +29,16 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:gray ;
+        }
+
+        tbody > tr:nth-child(odd) { /* podo usar (2n), (2n - 1), (even) */
+            background-color: lightgray;
         }
 
         td.num {
