@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: blueviolet;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: gold;
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1 {
+            order: 0;
+        }
+
+        div#i2 {
+            order: -1;
+        }
+
+        div#i3 {
+            order: -3;
+        }
+
+        div#i4 {
+            order: 1;
+        }
+
+        div#i5 {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">Item 1</div>
+        <div class="item" id="i2">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item" id="i4">Item 4</div>
+        <div class="item" id="i5">Item 5</div>
+
+    </div>
+</body>
+</html>
